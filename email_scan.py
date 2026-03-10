@@ -46,7 +46,7 @@ def scanURLS(urls):
         return f"{GREEN}{num} URL(s) scanned. No problems detected.{RESET}"
         
 def scanAttachments(attachments):
-    vt = Virustotal(API_KEY="f5c3369c638010a8be3652bad4b5ad9256ab9f745efa795d81c3f9266881355f")
+    vt = Virustotal(API_KEY=VT_API_KEY)
     verdict = f"\n"
     num = 0
     for att in attachments:
